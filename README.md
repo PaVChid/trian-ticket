@@ -1,4 +1,4 @@
-# Book-a-Ticket-WebDev
+# Book-a-Ticket
 Build a website to show availability of trains and book tickets.  
 - Requirements:
     - should be able to view list of trains
