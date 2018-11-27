@@ -18,9 +18,6 @@ router.get('/',function(req,res,next){
   res.render('index',{title:'Express'});
 });
 
-router.get('/books',function(req,res,next){
-  res.render('books_view',{count:books.length,books:books});
-});
 router.get('/train',function(req,res,next){
   res.render('train',{count:trains.length,trains:trains});
 });
