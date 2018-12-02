@@ -1,10 +1,10 @@
 body {
-  padding: 50px;
+  padding: 40px;
   font: 14px "Lucida Grande", Times New Roman, Arial Black, sans-serif;
 }
 
 a {
-  color: Light Blue;
+  color: Blue;
 }
 table {
   font-family: arial, sans-serif;
@@ -14,8 +14,8 @@ table {
 
 td, th {
   border: 0.75px solid #dddddd;
-  text-align: left;
-  padding: 6px;
+  text-align: center;
+  padding: 5px;
 }
 
 tr:nth-child(even) {
