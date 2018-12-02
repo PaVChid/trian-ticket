@@ -6,12 +6,10 @@ var logger = require('morgan');
 
 var router = express.Router();
 var trains=[
-  {name:'ChennaiExpress',TotalSeats:120,AvailableSeats:120},
-  {name:'MumbaiExpress',TotalSeats:120,AvailableSeats:120},
-  {name:'CheranExpress',TotalSeats:120,AvailableSeats:120},
-  {name:'PandianExpress',TotalSeats:120,AvailableSeats:120},
-  {name:'BluemountainExpress',TotalSeats:120,AvailableSeats:120}
-
+  {name:'Jan Shatabdi',TotalSeats:500,AvailableSeats:500},
+  {name:'Chemmozhi Express',TotalSeats:200,AvailableSeats:200},
+  {name:'PandianExpress',TotalSeats:200,AvailableSeats:200},
+  {name:'Chennai Express',TotalSeats:200,AvailableSeats:200},
 ]
 
 router.get('/',function(req,res,next){
@@ -48,18 +46,17 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(router);
 
-// catch 404 and forward to error handler
+
 app.use(function(req, res, next) {
   next(createError(404));
 });
 
-// error handler
+
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
+
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
   res.status(err.status || 500);
   res.render('error');
 });
